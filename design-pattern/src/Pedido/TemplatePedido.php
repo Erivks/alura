@@ -1,8 +1,8 @@
 <?php
 
-namespace Src;
+namespace Src\Pedido;
 
-class DadosExternosPedido {
+class TemplatePedido {
     private String $nomeCliente;
     private \DateTimeImmutable $dataFinalizacao;
 
