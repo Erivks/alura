@@ -3,7 +3,6 @@
 namespace Src;
 
 class Pedido {
-    public String $nomeCliente;
-    public \DateTimeInterface $dataFinalizacao;
+    public DadosExternosPedido $dados;
     public Orcamento $orcamento;
 }
