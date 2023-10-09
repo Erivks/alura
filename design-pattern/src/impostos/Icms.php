@@ -2,8 +2,8 @@
 
 namespace Src\Impostos;
 
-class Icms implements Imposto {
-    public function calcula(\Src\Orcamento $orcamento): Float {
+class Icms extends Imposto {
+    public function realizaCalculoEspecifico(\Src\Orcamento $orcamento): Float {
         return $orcamento->valor * 0.1;
     }
 }
