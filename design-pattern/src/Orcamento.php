@@ -4,13 +4,14 @@ namespace Src;
 
 use Src\EstadosOrcamento\{EstadoOrcamento, EmAprovacao};
 
-class Orcamento {
-    public int $quantidade;
-    public float $valor;
+class Orcamento implements Orcavel {
+
+    private array $itens;
     public EstadoOrcamento $estadoAtual;
 
     public function __construct() {
         $this->estadoAtual = new EmAprovacao();
+        $this->itens = [];
     }
 
     public function aplicaDescontoExtra(): Void {
@@ -27,5 +28,17 @@ class Orcamento {
     
     public function finaliza(): Void {
         $this->estadoAtual->finaliza($this);
+    }
+
+    public function addItens(Orcavel $item): Void {
+        $this->itens[] = $item;
+    }
+
+    public function valor(): Float {
+        return array_reduce(
+            $this->itens,
+            fn (Float $valorAcumulado, Orcavel $item) => $item->valor() + $valorAcumulado,
+            0
+        );
     }
 }
