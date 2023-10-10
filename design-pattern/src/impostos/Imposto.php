@@ -7,17 +7,17 @@ use Src\Orcamento;
 abstract class Imposto {
     private ?Imposto $outroImposto;
     
-    public function __construct(Imposto $outroImposto) {
+    public function __construct(Imposto $outroImposto = null) {
         $this->outroImposto = $outroImposto;
     }
 
     abstract protected function realizaCalculoEspecifico(Orcamento $orcamento): Float;
 
     public function calculaImposto(Orcamento $orcamento) {
-        return $this->realizaCalculoEspecifico($orcamento) + $this->realizaCalculoDeOutroImposto($this->outroImposto);
+        return $this->realizaCalculoEspecifico($orcamento) + $this->realizaCalculoDeOutroImposto($orcamento);
     }
 
     private function realizaCalculoDeOutroImposto(Orcamento $orcamento) {
-        return $this->outroImposto === null ? 0 : $this->outroImposto->calculaImposto();
+        return $this->outroImposto === null ? 0 : $this->outroImposto->calculaImposto($orcamento);
     }
 }

@@ -11,7 +11,7 @@ abstract class EstadoOrcamento {
         throw new \Exception("Este orçamento não pode ser aprovado.");
     }
 
-    public function reprovado(Orcamento $orcamento) {
+    public function reprova(Orcamento $orcamento) {
         throw new \Exception("Este orçamento não pode ser reprovado.");
     }
 

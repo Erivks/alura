@@ -8,7 +8,8 @@ class Orcamento implements Orcavel {
 
     private array $itens;
     public EstadoOrcamento $estadoAtual;
-
+    public float $valor;
+    
     public function __construct() {
         $this->estadoAtual = new EmAprovacao();
         $this->itens = [];
