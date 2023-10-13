@@ -3,7 +3,7 @@
 namespace Src\Testes;
 
 use PHPUnit\Framework\TestCase;
-use Src\Email;
+use Src\Dominio\Email;
 
 class EmailTest extends TestCase {
     public function testEmailDeveSerValido() {

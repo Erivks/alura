@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Aluno;
+namespace Src\Dominio\Aluno;
 
-use Src\{CPF, Email};
+use Src\Dominio\{CPF, Email};
 
 class Aluno {
     private CPF $cpf;

@@ -3,7 +3,7 @@
 namespace Src\Testes;
 
 use PHPUnit\Framework\TestCase;
-use Src\CPF;
+use Src\Dominio\CPF;
 
 class CpfTest extends TestCase {
     public function testCpfDeveSerValido() {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Src;
+namespace Src\Dominio;
 
 class Email {
     private String $endereco;

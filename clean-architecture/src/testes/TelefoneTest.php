@@ -3,7 +3,7 @@
 namespace Src\Testes;
 
 use PHPUnit\Framework\TestCase;
-use Src\Aluno\Telefone;
+use Src\Dominio\Aluno\Telefone;
 
 class TelefoneTest extends TestCase {
     public function testDddDeveSerValido() {
