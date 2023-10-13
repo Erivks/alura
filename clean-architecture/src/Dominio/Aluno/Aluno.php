@@ -25,15 +25,19 @@ class Aluno {
         return $this;
     }
 
-    public function setCpf(CPF $cpf): Void {
-        $this->cpf = $cpf;
+    public function getCpf(): String {
+        return $this->cpf;
     }
 
-    public function setNome(String $nome): Void {
-        $this->nome = $nome;
+    public function getNome(): String {
+        return $this->nome;
     }
 
-    public function setEmail(Email $email): Void {
-        $this->email = $email;
+    public function getEmail(): String {
+        return $this->email;
+    }
+
+    public function getTelefone(): Array {
+        return $this->telefone;
     }
 }

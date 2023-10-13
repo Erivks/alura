@@ -42,6 +42,14 @@ class Telefone {
         $this->numero = $numero;
     }
 
+    public function getDdd(): String {
+        return $this->ddd;
+    }
+
+    public function getNumero(): String {
+        return $this->numero;
+    }
+
     public function __toString(): String {
         return "({$this->ddd}) {$this->numero}";
     }
