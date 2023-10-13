@@ -1,6 +1,8 @@
 <?php
 
-namespace Src;
+namespace Src\Indicacao;
+
+use Src\Aluno\Aluno;
 
 class Indicacao {
     private Aluno $indicador;
