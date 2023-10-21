@@ -30,7 +30,7 @@ class Aluno {
         return $this;
     }
 
-    public function getCpf(): String {
+    public function getCpf(): CPF {
         return $this->cpf;
     }
 
