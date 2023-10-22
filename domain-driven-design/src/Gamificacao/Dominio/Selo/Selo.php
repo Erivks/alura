@@ -7,6 +7,7 @@ use Src\Shared\Dominio\CPF;
 class Selo {
     private CPF $cpfAluno;
     private string $nome;
+    const NOVATO = "novato";
 
     public function __construct(CPF $cpfAluno, String $nome) {
         $this->cpfAluno = $cpfAluno;

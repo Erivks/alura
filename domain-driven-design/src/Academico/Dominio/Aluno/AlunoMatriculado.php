@@ -3,9 +3,9 @@
 namespace Src\Academico\Dominio\Aluno;
 
 use Src\Shared\Dominio\CPF;
-use Src\Academico\Dominio\Evento;
+use Src\Shared\Dominio\Evento;
 
-class AlunoMatriculado implements Evento {
+class AlunoMatriculado extends Evento {
     public \DateTimeImmutable $momento;
     public CPF $cpfAluno;
 
@@ -22,5 +22,12 @@ class AlunoMatriculado implements Evento {
         return $this->momento;
     }
 
+    public function toArray(): array {
+        return get_object_vars($this);
+    }
+
+    public function nome(): string {
+        return "aluno_matriculado";
+    }
 
 }

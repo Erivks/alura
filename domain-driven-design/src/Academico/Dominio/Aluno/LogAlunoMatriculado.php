@@ -2,8 +2,8 @@
 
 namespace Src\Academico\Dominio\Aluno;
 
-use Src\Academico\Dominio\Evento;
-
+use Src\Shared\Dominio\Evento;
+use Src\Shared\Dominio\Evento\OuvinteEvento;
 class LogAlunoMatriculado extends OuvinteEvento {
     
     /** @param AlunoMatriculado $alunoMatriculado */
@@ -17,6 +17,6 @@ class LogAlunoMatriculado extends OuvinteEvento {
     }
 
     public function sabeProcessar(Evento $evento): bool {
-        return $evento instanceof AlunoMatriculado;
+        return $evento->nome() === "aluno_matriculado";
     }
 }

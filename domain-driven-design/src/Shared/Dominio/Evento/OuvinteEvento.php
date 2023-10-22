@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Academico\Dominio\Aluno;
+namespace Src\Shared\Dominio\Evento;
 
-use Src\Academico\Dominio\Evento;
+use Src\Shared\Dominio\Evento;
 
 abstract class OuvinteEvento {
     public function processa(Evento $evento): void {
