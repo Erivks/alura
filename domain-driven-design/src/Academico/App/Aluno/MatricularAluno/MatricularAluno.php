@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Aplicacao\Aluno\MatricularAluno;
+namespace Src\Academico\App\Aluno\MatricularAluno;
 
 use Src\Dominio\Aluno\Aluno;
 use Src\Dominio\Aluno\AlunoMatriculado;

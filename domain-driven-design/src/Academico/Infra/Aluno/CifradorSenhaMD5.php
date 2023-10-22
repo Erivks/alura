@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Infra\Aluno;
+namespace Src\Academico\Infra\Aluno;
 
-use Src\Dominio\Aluno\CifradorSenha;
+use Src\Academico\Dominio\Aluno\CifradorSenha;
 
 class CifradorSenhaMD5 implements CifradorSenha {
     public function cifrar(String $senha): String {

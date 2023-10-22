@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Dominio;
+namespace Src\Academico\Dominio;
 
 interface Evento {
     public function momento(): \DateTimeImmutable;

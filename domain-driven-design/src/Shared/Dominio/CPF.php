@@ -1,8 +1,6 @@
 <?php
 
-namespace Src\Dominio;
-
-use InvalidArgumentException;
+namespace Src\Shared\Dominio;
 
 class CPF {
     private String $numero;

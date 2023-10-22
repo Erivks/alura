@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Dominio\Aluno;
+namespace Src\Academico\Dominio\Aluno;
 
-use Src\Dominio\CPF;
+use Src\Shared\Dominio\CPF;
 
 interface AlunoRepository {
     public function addAluno(Aluno $aluno): Void;

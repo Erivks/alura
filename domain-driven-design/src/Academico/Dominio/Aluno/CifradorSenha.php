@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Dominio\Aluno;
+namespace Src\Academico\Dominio\Aluno;
 
 interface CifradorSenha {
     public function cifrar(String $senha): String;

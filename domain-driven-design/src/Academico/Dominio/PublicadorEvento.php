@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Dominio;
+namespace Src\Academico\Dominio;
 
-use Src\Dominio\Aluno\OuvinteEvento;
+use Src\Academico\Dominio\Aluno\OuvinteEvento;
 
 class PublicadorEvento {
     private array $ouvintes;

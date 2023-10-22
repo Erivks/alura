@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Infra\Aluno;
+namespace Src\Academico\Infra\Aluno;
 
-use Src\Dominio\Aluno\Aluno;
-use Src\Dominio\Aluno\AlunoRepository;
-use Src\Dominio\CPF;
+use Src\Academico\Dominio\Aluno\Aluno;
+use Src\Academico\Dominio\Aluno\AlunoRepository;
+use Src\Shared\Dominio\CPF;
 
 class AlunoRepositoryMemory implements AlunoRepository {
     

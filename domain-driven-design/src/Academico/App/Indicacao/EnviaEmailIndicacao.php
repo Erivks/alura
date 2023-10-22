@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\App;
+namespace Src\Academico\App;
 
 use Src\Dominio\Aluno\Aluno;
 

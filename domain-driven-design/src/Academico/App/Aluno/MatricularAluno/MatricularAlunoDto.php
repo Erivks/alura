@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Aplicacao\Aluno\MatricularAluno;
+namespace Src\Academico\App\Aluno\MatricularAluno;
 
 class MatricularAlunoDto
 {

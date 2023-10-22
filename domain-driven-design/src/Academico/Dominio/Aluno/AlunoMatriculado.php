@@ -1,9 +1,9 @@
 <?php
 
-namespace Src\Dominio\Aluno;
+namespace Src\Academico\Dominio\Aluno;
 
-use Src\Dominio\CPF;
-use Src\Dominio\Evento;
+use Src\Shared\Dominio\CPF;
+use Src\Academico\Dominio\Evento;
 
 class AlunoMatriculado implements Evento {
     public \DateTimeImmutable $momento;
